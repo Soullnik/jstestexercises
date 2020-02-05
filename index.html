@@ -6,15 +6,15 @@
         <style>.red {color: red; }</style>
     </head>
     <body>
-        <input type="text" name="name" id="name_input" value="Xxxx" >
+        <input type="text" name="name" id="name_input" value="Xxxx"  >
         <script>
-            document.getElementById("name_input").addEventListener("change", function(){
+            document.getElementById("name_input").onkeypress = function(event) {
                 if(this.value != this.defaultValue) {
                 this.classList.add('red');
             }else{
                 this.classList.remove('red');
             }
-            });
+            };
         </script>
     </body>
 </html>
