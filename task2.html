@@ -3,12 +3,60 @@
     <head>
         <meta charset="utf8">
         <title>Task 2</title>
+        <script src="./main.js"></script>
     </head>
     <body>
-        <div>
+        <div style="text-align: center; background-color: aquamarine;">
             <h1>Task 2</h1>
-            <input type="radio" name=""
+            <br>
+            <h3>Выберите размер</h3>
+            <label for="changeSize">
+            <b style="padding-right: 10px;">S</b>
+            <b style="padding-right: 10px;">M</b>
+            <b>L</b>
+            </label>
+            <form id="changeSize">
+            <input  type="radio" name="size" value="S">
+            <input  type="radio" name="size" value="M">
+            <input  type="radio" name="size" value="L">
+            </form>
+            <br>
+            
+            <div style="text-align: center;">
+                <h3>Выберите цвет</h3>
+                <label for="1">Цвет 1</label>
+                <input type="checkbox" name="color" id="1" value="1">
+                <br>
+                <label for="2">Цвет 2</label>
+                <input type="checkbox" name="color" id="2" value="2">
+                <br>
+                <label for="3">Цвет 3</label>
+                <input type="checkbox" name="color" id="3" value="3">
+                <br>
+                <label for="4">Цвет 4</label>
+                <input type="checkbox" name="color" id="4" value="4">
+                <br>
+                <label for="5">Цвет 5</label>
+                <input type="checkbox" name="color" id="5" value="5"> 
+            </div> 
+            <br>
+            <div>
+                <h3>Выберите производителя</h3>
+                <select style="width: 100px;" name="manufacturer" multiple size="4">
+                    <option>aaa</option>
+                    <option>b&c</option>
+                    <option>ddd</option>
+                    <option>eee</option>
+                </select>
+            </div> 
+            <br>
+            <br>
+            <div>
+                <label for="sale"><strong>Распродажа</strong></label>
+                <input type="checkbox" name="sale" id="sale" value="1">
+            </div>
         </div>
-        <script></script>
+
+        <button onclick="changeSizeBox()">Кнопка</button>
     </body>
 </html>
