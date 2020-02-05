@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta срфкыуе="utf-8">
+        <title>JS test</title>
+        <style>.red {color: red; }</style>
+    </head>
+    <body>
+        <input type="text" name="name" id="name_input" value="Xxxx" >
+        <script>
+            document.getElementById("name_input").addEventListener("change", function(){
+            if(this.value != "Xxxx") {
+                this.classList.add('red');
+            }else{
+                this.classList.remove('red');
+            }
+            });
+        </script>
+    </body>
+</html>
